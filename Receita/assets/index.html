@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mt-5 main"> <!-- Adicione a classe "main" aqui -->
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="container">Receita de Bolo de Chocolate</h1>
+                <p class="container">
+                    Esta é uma receita deliciosa de bolo de chocolate que você pode fazer em casa. Siga os passos abaixo para preparar este incrível bolo.
+                </p>
+                <img src="bolo-chocolate.jpg" alt="Bolo de Chocolate" class="img-fluid container">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <!-- Adicione a classe "item" aqui -->
+                <div class="page item" id="page1">
+                    <h2>Passo 1</h2>
+                    <p>Misture os ingredientes secos em uma tigela grande.</p>
+                </div>
+                <!-- Adicione a classe "item" aqui -->
+                <div class="page item" id="page2" style="display: none;">
+                    <h2>Passo 2</h2>
+                    <p>Adicione os ingredientes líquidos à mistura e mexa bem.</p>
+                </div>
+                <!-- Adicione a classe "item" aqui -->
+                <div class="page item" id="page3" style="display: none;">
+                    <h2>Passo 3</h2>
+                    <p>Asse o bolo no forno pré-aquecido a 180°C por 30 minutos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-8">
+<ul class="pagination">
+    <li class="page-item"><button id="page1-button" class="btn btn-primary">1</button></li>
+    <li class="page-item"><button id="page2-button" class="btn btn-primary">2</button></li>
+    <li class="page-item"><button id="page3-button" class="btn btn-primary">3</button></li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
